@@ -27,5 +27,6 @@ COPY \
   yarn.lock ./
 
 RUN yarn install
+RUN rm -f package*.json
 
 ENTRYPOINT ["node", "cli.js"]
